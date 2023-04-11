@@ -1,0 +1,68 @@
+/* NavBar.scss */
+@import "global.scss";
+.navbar {
+  background-color: #fff; /* set the background color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* add a box shadow */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1002;
+}
+.navbar-collapse {
+  z-index: 1001; /* Set the z-index value to be higher than page content */
+}
+.navbar-custom {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+  }
+  
+.navbar-brand {
+  font-family: 'Playfair Display', serif; /* set the font for the brand */
+  font-size: 2rem; /* increase the font size */
+  color: #000; /* set the font color */
+  text-transform: uppercase; /* add uppercase text */
+  letter-spacing: 1px; /* increase the letter spacing */
+  padding: 50px;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif; /* set the font for the links */
+  font-size: 1rem; /* increase the font size */
+  color: #000; /* set the font color */
+  text-transform: uppercase; /* add uppercase text */
+  letter-spacing: 1px; /* increase the letter spacing */
+  margin-right: 1.5rem; /* add some margin between links */
+  transition: all 0.2s ease-in-out; /* add a transition effect */
+}
+
+.nav-link:hover {
+  color: #ff6700; /* change the color on hover */
+  font-size: 1.1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-toggler {
+  border: none; /* remove the border */
+  outline: none; /* remove the outline */
+}
+
+.navbar-toggler-icon {
+  //background-image: url("../images/menu-icon.png"); /* add a custom icon */
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #fff; /* set the background color */
+    border-radius: 5px; /* add some border radius */
+    margin-top: 2rem; /* add some margin */
+  }
+
+  .nav-link {
+    display: block; /* change the display to block */
+    margin: 0 auto 1rem; /* center the links */
+  }
+}

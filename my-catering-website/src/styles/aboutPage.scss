@@ -1,0 +1,24 @@
+@import "global.scss";
+
+#about {
+  background-color: #faf9f8;
+  padding: 5rem 0;
+  height: 60%;
+}
+
+#about h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}

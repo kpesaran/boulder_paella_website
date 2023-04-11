@@ -1,0 +1,38 @@
+/* Variables */
+$primary-color: #f48c06;
+$secondary-color: #333333;
+$navBar-height: 100px;
+
+/* Global Styles */
+html {
+  scroll-behavior: unset;   
+}
+
+body {
+    font-family: "Playfair Display", serif; /* set the font for the brand */
+    ;
+    padding-top: $navBar-height
+    
+}
+
+a {
+  color: $primary-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif; 
+}
+
+/* Footer */
+footer {
+    background-color: $secondary-color;
+    color: #ffffff;
+  }
+  
+  footer a {
+    color: #ffffff;
+  }
+  
+  footer a:hover {
+    color: $primary-color;
+  }

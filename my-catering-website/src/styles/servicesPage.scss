@@ -1,0 +1,35 @@
+/* ServicesPage.scss */
+
+.services{
+  margin-bottom: 200px !important ;
+}
+
+.services h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 3rem;
+}
+
+.services h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.services p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+  .services h2 {
+    font-size: 2rem;
+  }
+
+  .services h3 {
+    font-size: 1.5rem;
+  }
+}

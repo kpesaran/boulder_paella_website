@@ -1,0 +1,41 @@
+.menu {
+    padding: 1rem;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+  
+    .menu-section {
+      margin-bottom: 1rem;
+  
+      .menu-section-title {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+  
+      .menu-section-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+  
+        .menu-card {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+        .card-img {
+            margin: 3rem;
+          }
+      }
+    }
+  
+    @media only screen and (max-width: 576px) {
+      .menu-section-cards {
+        flex-direction: column;
+  
+        .menu-card {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  
