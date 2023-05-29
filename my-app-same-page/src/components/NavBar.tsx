@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import '../styles/navBar.scss';
+//anchor when using #.
 
 const NavBar: React.FC = () => {
   return (

@@ -13,7 +13,7 @@ export default function NavBar() {
           <Nav.Link href="/about" className="nav-link-custom">About</Nav.Link>
           <Nav.Link href="/menu" className="nav-link-custom">Menu</Nav.Link>
           <Nav.Link className="nav-link-custom" href="/services">Services</Nav.Link>
-          <Nav.Link  className="nav-link-custom"href="/testimonials">Testimonials</Nav.Link>
+          {/* <Nav.Link  className="nav-link-custom"href="/testimonials">Testimonials</Nav.Link> */}
           <Nav.Link className="nav-link-custom" href="/contact">Contact Us</Nav.Link>
         </Nav>
       </Navbar.Collapse>

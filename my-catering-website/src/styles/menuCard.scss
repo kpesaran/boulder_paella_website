@@ -1,0 +1,146 @@
+@import "global.scss";
+// .menu-card {
+//     background-color: #faf9f8;
+//     border: none;
+//     margin-bottom: 2rem;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+//     .card-img {
+//       margin: 3rem;
+//     }
+  
+    .card-title {
+      color: #333333;
+    }
+  
+    .card-subtitle {
+      color: #f48c06;
+    }
+  
+
+
+$menu-primary-color: #f48c06;
+$menu-secondary-color: #52917b;
+$menu-tertiary-color: #f5f5f5;
+
+$menu-card-font-family: "Montserrat", sans-serif;
+$menu-card-background-color: #fff;
+$menu-card-border-radius: 10px;
+$menu-card-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+$menu-card-width: calc(100% / 3 - 100px);
+$menu-card-margin: 20px;
+$menu-card-padding: 1rem;
+
+$menu-card-title-height: 60px;
+$menu-card-price-height: 40px;
+$menu-card-img-height: 300px;
+$menu-card-ingredients-height: 100px;
+
+
+.menu-section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+  .menu-card {
+    width: $menu-card-width;
+    margin: $menu-card-margin;
+    background-color: $menu-card-background-color;
+    border-radius: $menu-card-border-radius;
+    box-shadow: $menu-card-box-shadow;
+    padding: $menu-card-padding;
+    padding-top: 40px;
+    font-family: $font_fam1;
+    font-size: $xs_font;
+    font-style: italic;
+    transition: all 0.3s ease;
+    max-height: 800px;
+    border-bottom-width: 6px;
+    border-right-width: 4px;
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      }
+    .card-title {
+        font-size: $s_font;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top:1rem;
+      
+        text-align: center;
+        height: $menu-card-title-height;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .menu-card-ingredients{
+          padding: 0px;
+      }
+      .card-subtitle {
+     
+        font-weight: bold;
+        text-align: center;
+        height: $menu-card-price-height;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card-img {
+        height: $menu-card-img-height;
+        object-fit: cover;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+  
+      .menu-card-ingredients {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: $menu-secondary-color;
+        text-align: left;
+        height: $menu-card-ingredients-height;
+        overflow: hidden;
+      }
+    // Other styles for .menu-card
+  }
+
+  .menu-card-dietary {
+    display: flex;
+    flex-wrap: wrap;
+   
+    div {
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-size: 1.2rem;
+    }
+
+    .menu-card-dietary-vegan {
+      background-color: #32a852;
+      color: $modern-color-4;
+    }
+
+    .menu-card-dietary-vegetarian {
+      background-color: #7a61d1;
+      color: $modern-color-4;
+    }
+
+    .menu-card-dietary-gluten-free {
+      background-color: #f1c40f;
+      color: $modern-color-4
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .menu-card {
+      width: calc(100% / 2 - 50px);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .menu-card {
+      width: 100%;
+    }
+  }
+}

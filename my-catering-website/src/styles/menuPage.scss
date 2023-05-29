@@ -1,41 +1,84 @@
+@import 'global.scss';
+
+// .menu {
+//   padding: 1rem;
+//   margin-top: 10%;
+//   margin-left: 30%;
+//   margin-right: 30%;
+
+//   .menu-section {
+//     margin-bottom: 1rem;
+
+//     .menu-section-title {
+//       font-size: 2rem;
+//       font-weight: bold;
+//       color: #f48c06;
+//     }
+//   }
+
+//   @media only screen and (max-width: 576px) {
+//     margin-left: 5%;
+//     margin-right: 5%;
+
+//     .menu-section-cards {
+//       flex-direction: column;
+//     }
+//   }
+// }
+$menu-primary-color: #f48c06;
+$menu-secondary-color: #87b5a5;
+$menu-tertiary-color: #f5f5f5;
+
+$menu-card-font-family: 'Montserrat', sans-serif;
+$menu-card-background-color: #fff;
+$menu-card-border-radius: 10px;
+$menu-card-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+$menu-card-width: calc(100% / 3 - 20px);
+$menu-card-margin: 10px;
+$menu-card-padding: 1rem;
+$menu-card-border-animation-duration: 1s; 
+$menu-card-border-width: 3px;
+$menu-card-border-color: $menu-primary-color;
+.heading {
+  margin: 10%;
+  margin-top: 150px;
+  margin-bottom: 0;
+  font-size: 36px;
+  color: #333333;
+  /* // Light gray */
+  h4 {
+    font-size: $m_font;
+    font-family: $font_fam1;
+  }
+  
+}
 .menu {
-    padding: 1rem;
-    margin-top: 10%;
-    margin-left: 30%;
-    margin-right: 30%;
-  
-    .menu-section {
+  padding: 1rem;
+  margin: 1rem;
+
+  .menu-section {
+    margin-bottom: 1rem;
+    
+    .menu-section-title {
+      font-size: $xl_font;
+      font-weight: bold;
+      text-align: center;
       margin-bottom: 1rem;
-  
-      .menu-section-title {
-        font-size: 2rem;
-        font-weight: bold;
-      }
-  
-      .menu-section-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-  
-        .menu-card {
-          width: 100%;
-          margin-bottom: 2rem;
-        }
-        .card-img {
-            margin: 3rem;
-          }
-      }
+      color: $menu-primary-color;
     }
-  
+    .menu-section-cards{
+      justify-content:  center;
+    }
+
     @media only screen and (max-width: 576px) {
       .menu-section-cards {
         flex-direction: column;
-  
+
         .menu-card {
-          width: 100%;
-          margin-bottom: 2rem;
+          width: 90%;
+          margin: 1rem 0;
         }
       }
     }
   }
-  
+}

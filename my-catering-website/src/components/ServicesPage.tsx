@@ -27,17 +27,21 @@ const ServicesPage: React.FC = () => {
   ];
 
   return (
-    <Container>
-      <h3>Our Services</h3>
-      <Row>
+    <div>
+    
+    <Container className='home-container'>
+    <h2>Our Services</h2>
+        <Row>
+        
         {services.map((service) => (
-          <Col md={4} key={service.title}>
+          <Col md={6} className = 'services' key={service.title}>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
           </Col>
         ))}
       </Row>
-    </Container>
+      </Container>
+      </div>
   );
 };
 

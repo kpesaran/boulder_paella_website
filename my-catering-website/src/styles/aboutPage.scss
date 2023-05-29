@@ -1,24 +1,37 @@
 @import "global.scss";
 
 #about {
-  background-color: #faf9f8;
+  // background-color: #faf9f8;
   padding: 5rem 0;
   height: 60%;
+}
+
+.outer-container {
+ margin-top: 10px;
+}
+
+.main-container {
+  border: black solid 1px;
+  display: flex;
+  flex-direction: column;
 }
 
 #about h2 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  color: $modern-color-1; // Vibrant orange
 }
 
 #about p {
-  font-size: 1.2rem;
+  font-size: $s-font;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .about-section {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+

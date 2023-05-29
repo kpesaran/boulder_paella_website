@@ -1,0 +1,64 @@
+/* ContactPage.css */
+
+h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-control {
+    padding: 0.5rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-control {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+  }
+  
+  //JS API that generates email and send to a email of your choice 
+  
+  
+ // customer clicked submit which is a POST action to the backend server for some response, which could be an alert or notification 
+ 
+ body {
+ background-image: url("../assets/images/laptop-mockup.jpg");
+  background-repeat: no-repeat ;
+  background-attachment: fixed;  
+  background-size: cover;
+ }

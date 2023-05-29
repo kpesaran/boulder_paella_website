@@ -2,17 +2,44 @@
 $primary-color: #f48c06;
 $secondary-color: #333333;
 $navBar-height: 50px;
+$modern-color-1: #ff7e67; // Vibrant orange
+$modern-color-2: #40e0d0; // Vibrant turquoise
+$modern-color-3: #ff00ff; // Vibrant fuchsia
+$modern-color-4: #fafafa; //
+$xs_font: 1.0rem;
+$s_font: 2.2rem;
+$m_font: 2.4rem;
+$l_font: 3rem;
+$xl_font: 5rem;
+$font_fam1: 'Playfair Display', serif;
+$font_fam2: "Roboto", sans-serif;
+$pastel_coral:  rgb(255, 188, 153);
+
+$pastelyellow: rgb(255, 248, 168);
+$pastelgreen: rgb(163, 244, 162);
+$pastelturquoise: rgb(153, 255, 235);
+$pastelBlue: rgb(162, 199, 244);
+$pastelLavender: rgb(212, 173, 244);
+$pastelPink: rgb(255, 179, 219);
 
 /* Global Styles */
 html {
   scroll-behavior: unset;   
 }
+
 body {
-    font-family: "Playfair Display", serif; /* set the font for the brand */
-    ;
-    padding-top: $navBar-height
-    
+  // margin-left: 50px;
+  // margin-right: 50px;
+  font-family: $font_fam1;
+  padding-top: $navBar-height;
+  text-transform: none;
+  background-image: url("../assets/images/background-img-spain.png");
+  //background-image: url("../assets/images/laptop-mockup.jpg");
+  background-repeat: no-repeat ;
+  background-attachment: fixed;  
+  background-size: cover;
 }
+
 .container {
   margin-top: 200px;
 }
@@ -22,19 +49,19 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font_fam1;
 }
 
 /* Footer */
 footer {
-    background-color: $secondary-color;
-    color: #ffffff;
-  }
-  
-  footer a {
-    color: #ffffff;
-  }
-  
-  footer a:hover {
-    color: $primary-color;
-  }
+  background-color: $secondary-color;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: $primary-color;
+}

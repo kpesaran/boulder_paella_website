@@ -1,40 +1,22 @@
 import React from "react";
-import { Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
 import "../styles/menuPage.scss";
-import data from "../assets/menuData";
+import { data } from "../assets/menuData";
 
-const MenuPage: React.FC = () => {return (
-  <div className="menu">
-    {data.menuData.map((section) => (
-      <div key={section.title} className="menu-section">
-        <h2 className="menu-section-title">{section.title}</h2>
-        <div className="menu-section-cards">
-          {section.items.map((item) => (
-            <Card key={item.itemName} className="menu-card">
-              <CardImg top width="100%" src={item.image} alt={item.itemName} />
-              <CardBody>
-                <CardTitle tag="h3">{item.itemName}</CardTitle>
-                <CardSubtitle tag="h4">${item.price}</CardSubtitle>
-                <CardText>
-                  <ul className="menu-card-ingredients">
-                    {item.ingredients.map((ingredient) => (
-                      <li key={ingredient}>{ingredient}</li>
-                    ))}
-                  </ul>
-                  <div className="menu-card-dietary">
-                    {item.isVegan && <div className="menu-card-dietary-vegan">Vegan</div>}
-                    {item.isVegetarian && <div className="menu-card-dietary-vegetarian">Vegetarian</div>}
-                    {item.isGlutenFree && <div className="menu-card-dietary-gluten-free">Gluten Free</div>}
-                  </div>
-                </CardText>
-              </CardBody>
-            </Card>
-          ))}
-        </div>
+import { MenuSection } from "./menuComponents/MenuSection";
+
+const MenuPage: React.FC = () => {
+  return (
+    <div>
+      <div className ='heading'>
+        <h4>Our menu offers a variety of paella options, each crafted with care and expertise to bring you the best of Spanish cuisine. From traditional recipes to our own fusion interpretations, our dishes showcase the versatility and depth of paella.</h4>
       </div>
-    ))}
-  </div>
-);
+        <div className="menu">
+        {data.map((section) => (
+        <MenuSection key={section.title} section={section} />
+      ))}
+        </div>
+    </div>
+  );
 };
 
 export default MenuPage;

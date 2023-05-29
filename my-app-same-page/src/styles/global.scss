@@ -5,7 +5,8 @@ $navBar-height: 100px;
 
 /* Global Styles */
 html {
-  scroll-behavior: unset;   
+  scroll-behavior: smooth;
+  scroll-padding-top: $navBar-height   
 }
 
 body {

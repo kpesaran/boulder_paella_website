@@ -1,8 +1,76 @@
+/* Variables */
+$primary-color: #f48c06;
+$secondary-color: #333333;
+$navBar-height: 50px;
+$modern-color-1: #ff7e67; // Vibrant orange
+$modern-color-2: #40e0d0; // Vibrant turquoise
+$modern-color-3: #ff00ff; // Vibrant fuchsia
+$modern-color-4: #fafafa; //
+$xs_font: 1.0rem;
+$s_font: 2.2rem;
+$m_font: 2.4rem;
+$l_font: 3rem;
+$xl_font: 5rem;
+$font_fam1: 'Playfair Display', serif;
+$font_fam2: "Roboto", sans-serif;
+$pastel_coral:  rgb(255, 188, 153);
 
-.container img {
-    border-radius: 20px;
+$pastelyellow: rgb(255, 248, 168);
+$pastelgreen: rgb(163, 244, 162);
+$pastelturquoise: rgb(153, 255, 235);
+$pastelBlue: rgb(162, 199, 244);
+$pastelLavender: rgb(212, 173, 244);
+$pastelPink: rgb(255, 179, 219);
+
+/* Global Styles */
+html {
+  scroll-behavior: unset;   
 }
 
-.jumbotron {
-    padding: 3rem;
+body {
+  font-family: $font_fam1;
+  //padding-top: $navBar-height;
+  text-transform: none; /* added */
 }
+
+.home-container {
+  margin: 50px;
+  display: flex;
+}
+
+.hero {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255,0)
+    ),
+    url('https://images.unsplash.com/photo-1531167849835-5a810fda9660')
+      no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  font-family: $font_fam1;
+  margin-top: 0px;
+  padding: 40px 0; /* added */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* added */
+}
+
+.hero h1 {
+  font-size: $xl_font;
+  font-weight: bold;
+  font-family: $font_fam1;
+  color:  $pastel_coral; /* changed */
+  margin-bottom: 20px;
+}
+
+.hero h3 {
+  font-size: $s_font;
+  text-transform: none;
+  color: #3e3e3e;
+  margin-bottom: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font_fam1;
+    text-transform: none;
+  }
+  

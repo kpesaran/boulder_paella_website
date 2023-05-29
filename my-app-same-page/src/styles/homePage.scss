@@ -1,10 +1,10 @@
 
 @import "global.scss";
 .container {
-    padding-top: 400px;
+    margin-top: $navBar-height;
 }
 .homepage-content {
-    margin-top: $navBar-height;
+    // margin-top: $navBar-height;
   }
   
 .container img {
